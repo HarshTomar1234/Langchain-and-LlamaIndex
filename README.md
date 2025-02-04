@@ -1,18 +1,5 @@
 ### **What is LangChain?**  
 **LangChain** is an open-source framework designed to build applications powered by **large language models (LLMs)**. It provides tools and integrations for chaining together various components, such as prompt templates, memory, APIs, and data sources, making it easier to create AI-powered applications.
- 
-**LlamaIndex** is a flexible data framework designed to connect custom data sources (e.g., documents, databases, APIs) to large language models (LLMs). It simplifies building **Retrieval-Augmented Generation (RAG)** systems by handling data ingestion, indexing, and querying. It structures unstructured data into retrievable formats, enabling LLMs to access domain-specific or private information.
-
-**Key Concepts**:
-- **Documents**: Raw data (e.g., text, PDFs, CSV files).
-- **Nodes**: Chunks/segments of documents for efficient retrieval.
-- **Indexes**: Data structures (e.g., vector stores, keyword-based indexes) for fast querying.
-- **Query Engines**: Interfaces to retrieve and synthesize answers from indexes.
-
-**Use Cases**:  
-- Question-Answering over private documents.  
-- Context-augmented chatbots.  
-- Enterprise knowledge management.
 
 ---
 
@@ -82,6 +69,19 @@ LangChain and **LlamaIndex (formerly GPT Index)** are often used together for **
   response = llm("What are the benefits of using AI?")
   print(response)
   ```
+
+**LlamaIndex** is a flexible data framework designed to connect custom data sources (e.g., documents, databases, APIs) to large language models (LLMs). It simplifies building **Retrieval-Augmented Generation (RAG)** systems by handling data ingestion, indexing, and querying. It structures unstructured data into retrievable formats, enabling LLMs to access domain-specific or private information.
+
+**Key Concepts**:
+- **Documents**: Raw data (e.g., text, PDFs, CSV files).
+- **Nodes**: Chunks/segments of documents for efficient retrieval.
+- **Indexes**: Data structures (e.g., vector stores, keyword-based indexes) for fast querying.
+- **Query Engines**: Interfaces to retrieve and synthesize answers from indexes.
+
+**Use Cases**:  
+- Question-Answering over private documents.  
+- Context-augmented chatbots.  
+- Enterprise knowledge management.
   
 ## **Basic LlamaIndex Workflow**
 
