@@ -82,4 +82,29 @@ LangChain and **LlamaIndex (formerly GPT Index)** are often used together for **
   response = llm("What are the benefits of using AI?")
   print(response)
   ```
+  
+## **Basic LlamaIndex Workflow**
 
+```python
+# Install LlamaIndex
+!pip install llama-index python-dotenv
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+from dotenv import load_dotenv
+import os
+
+# Load environment variables (e.g., OpenAI API key)
+load_dotenv()
+
+# Load documents from a directory
+documents = SimpleDirectoryReader("data").load_data()
+
+# Create a vector index
+index = VectorStoreIndex.from_documents(documents)
+
+# Create a query engine
+query_engine = index.as_query_engine()
+
+# Query the index
+response = query_engine.query("What is the capital of France?")
+print(response.response)  # Output: "The capital of France is Paris."
+```
